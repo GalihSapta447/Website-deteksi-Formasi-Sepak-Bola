@@ -12,7 +12,7 @@ import sqlite3
 import json
 
 # Konfigurasi awal
-MODEL_PATH = 'Model/CNN_formasi.h5'
+MODEL_PATH = 'Model/CNN_deteksi_formasi.h5'
 HISTORY_FILE = 'history.json'
 VISUAL_PATH = 'Static/images'
 CLASS_NAMES = ['4-3-3', '4-4-2', '3-5-2']
