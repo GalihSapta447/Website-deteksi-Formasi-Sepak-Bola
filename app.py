@@ -37,26 +37,6 @@ def load_css(file_path):
 
 load_css("CSS/styles.css")
 
-# Inisialisasi database
-def init_db():
-    try:
-        conn = sqlite3.connect('Data/history.db')
-        c = conn.cursor()
-        c.execute('''CREATE TABLE IF NOT EXISTS history (
-                    id INTEGER PRIMARY KEY AUTOINCREMENT,
-                    filename TEXT,
-                    prediction TEXT,
-                    confidence REAL,
-                    timestamp TEXT
-                    )''')
-        conn.commit()
-    except sqlite3.Error as e:
-        logging.error(f"SQLite error: {e}")
-        st.error("❌ Gagal menginisialisasi database")
-    finally:
-        conn.close()
-init_db()
-
 # Fungsi prediksi
 def predict_formation(img):
     img = img.convert('RGB')
