@@ -12,13 +12,14 @@ import sqlite3
 import json
 
 # Konfigurasi awal
-MODEL_PATH = 'Model/Model_deteksi_formasi.h5'
 HISTORY_FILE = 'history.json'
 VISUAL_PATH = 'Static/images'
 CLASS_NAMES = ['4-3-3', '4-4-2', '3-5-2']
 
 # Load model
-model = load_model(MODEL_PATH)
+url = 'https://drive.google.com/file/d/19fDI1OvYIPkvjhdnRsCQ9Eu8vWdI3rHn'
+output = 'Model/CNN_formasi.h5'
+gdown.download(url, output, quiet=False)
 
 logging.basicConfig(
     filename='Logs/app.log',
