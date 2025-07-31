@@ -8,7 +8,6 @@ from tensorflow.keras.preprocessing import image
 from PIL import Image
 import matplotlib.pyplot as plt
 import logging
-import sqlite3
 import json
 
 # Konfigurasi awal
