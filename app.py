@@ -262,7 +262,7 @@ if page_key == "home":
     st.markdown("""
     <div class="info-card">
         <h2 class="page-title">🏠Tentang Website</h2>
-        <p class="page-description">Website ini bertujuan untuk mengenali pola formasi sepak bola dengan teknologi Machine Learning</p>
+        <p class="page-description">Website ini bertujuan untuk mengenali pola formasi sepak bola dengan Deep Learning</p>
     </div>
     """, unsafe_allow_html=True)
     
