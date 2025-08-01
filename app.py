@@ -279,7 +279,7 @@ if page_key == "home":
     with col2:
         st.markdown("""
         <div class="info-card">
-            <h3 style="color: #667eea; text-align: center;">📊 Visualisasi</h3>
+            <h3 style="color: #667eea; text-align: center;">📊 Menampilkan Visualisasi</h3>
             <p style="text-align: center;">Lihat visualisasi formasi yang terdeteksi dalam bentuk gambar pola formasi</p>
         </div>
         """, unsafe_allow_html=True)
