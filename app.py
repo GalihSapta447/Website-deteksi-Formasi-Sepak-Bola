@@ -454,7 +454,7 @@ elif page_key == "history":
             st.markdown('<p style="color: #666; info-card;">Berikut adalah riwayat deteksi yang telah dilakukan:</p>', unsafe_allow_html=True)
         with col2:
             st.markdown('<div class="clear-all-btn">', unsafe_allow_html=True)
-            if st.button("🗑️ Hapus Semua", key="clear_all", help="Hapus semua riwayat"):
+            if st.button("Hapus Semua Riwayat", key="clear_all", help="Hapus semua riwayat"):
                 if clear_all_history():
                     st.success("✅ Semua riwayat berhasil dihapus!")
                     st.rerun()
@@ -489,7 +489,7 @@ elif page_key == "history":
             
             with col2:
                 st.markdown('<div class="delete-btn">', unsafe_allow_html=True)
-                if st.button("🗑️", key=f"delete_{original_index}", help="Hapus item ini"):
+                if st.button("Hapus", key=f"delete_{original_index}", help="Hapus Riwayat ini"):
                     if delete_history_item(original_index):
                         st.success("✅ Item berhasil dihapus!")
                         st.rerun()
