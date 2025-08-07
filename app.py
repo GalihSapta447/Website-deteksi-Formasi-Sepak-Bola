@@ -367,7 +367,6 @@ elif page_key == "dashboard":
     st.markdown("""
     <div class="info-card">
         <h2 class="page-title">📊 Dashboard</h2>
-        <p class="page-description">Statistik dan analisis deteksi formasi</p>
     </div>
     """, unsafe_allow_html=True)
     
@@ -511,4 +510,5 @@ elif page_key == "history":
             <p style="color: #666;">Lakukan deteksi formasi terlebih dahulu untuk melihat riwayat</p>
         </div>
         """, unsafe_allow_html=True)
+
 
