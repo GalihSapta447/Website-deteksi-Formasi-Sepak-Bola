@@ -1,3 +1,4 @@
+
 /* css/styles.css */
 .main {
     font-family: 'Inter', sans-serif;
@@ -75,6 +76,7 @@
         font-weight: 700;
         color: white;
         margin-bottom: 0.5rem;
+        text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     }
     
     .main-subtitle {
