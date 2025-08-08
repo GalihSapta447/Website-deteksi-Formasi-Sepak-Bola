@@ -64,10 +64,11 @@
         text-align: center;
         padding: 2rem 0;
         margin-bottom: 2rem;
-        background: rgba(110, 120, 194, 0.918);
+        background: rgb(48, 247, 237);
         border-radius: 20px;
         backdrop-filter: blur(10px);
         border: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
     }
     
     .main-title {
@@ -75,6 +76,7 @@
         font-weight: 700;
         color: white;
         margin-bottom: 0.5rem;
+        text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     }
     
     .main-subtitle {
@@ -86,7 +88,7 @@
     
     /* Page Header */
     .page-header {
-        background: rgb(255, 255, 255);
+        background: rgba(255, 255, 255, 0.1);
         border-radius: 15px;
         padding: 1.5rem;
         margin-bottom: 2rem;
@@ -133,7 +135,7 @@
     
     /* Card Styling */
     .upload-card, .info-card, .history-card {
-    background: rgb(69, 255, 171);
+        background: rgb(69, 255, 171);
         border-radius: 20px;
         padding: 2rem;
         margin-bottom: 2rem;
@@ -142,10 +144,6 @@
         border: 1px solid rgba(255, 255, 255, 0.2);
     }
     
-    .par{
-        background: #ffffff;
-    }
-
     .result-card {
         background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
         border-radius: 20px;
@@ -178,7 +176,7 @@
         font-size: 0.9rem;
     }
     
-    /* Tombol Styling */
+    /* Button Styling */
     .stButton > button {
         background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
         color: white;
@@ -197,7 +195,7 @@
         box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
     }
     
-    /* Tombol Hapus Styling */
+    /* Delete Button Styling */
     .delete-btn button {
         background: linear-gradient(135deg, #ff6b6b 0%, #ee5a5a 100%) !important;
         color: white !important;
@@ -217,7 +215,7 @@
         box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4) !important;
     }
     
-    /* Tombol Hapus Semua Styling */
+    /* Clear All Button Styling */
     .clear-all-btn button {
         background: linear-gradient(135deg, #ff4757 0%, #ff3838 100%) !important;
         color: white !important;
@@ -236,7 +234,7 @@
         box-shadow: 0 6px 20px rgba(255, 71, 87, 0.4) !important;
     }
     
-    /* File Unggah Styling */
+    /* File Uploader Styling */
     .stFileUploader {
         background: rgba(255, 255, 255, 0.9) !important;
         border-radius: 15px !important;
@@ -339,7 +337,7 @@
         display: none !important;
     }
     
-    /* Riwayat Styling */
+    /* History Item Styling */
     .history-item {
         background: rgba(102, 126, 234, 0.1);
         border-radius: 15px;
@@ -376,7 +374,7 @@
         margin: 0.2rem;
     }
     
-    /* Formasi Info Cards */
+    /* Formation Info Cards */
     .formation-info {
         background: rgba(255, 255, 255, 0.9);
         border-radius: 15px;
@@ -402,7 +400,7 @@
         margin-bottom: 0 !important;
     }
     
-    /* Animasi */
+    /* Animation */
     @keyframes fadeIn {
         from { opacity: 0; transform: translateY(20px); }
         to { opacity: 1; transform: translateY(0); }
@@ -412,7 +410,7 @@
         animation: fadeIn 0.6s ease-out;
     }
     
-    /* Desain responsif */
+    /* Responsive Design */
     @media (max-width: 768px) {
         .main-title {
             font-size: 2rem;
