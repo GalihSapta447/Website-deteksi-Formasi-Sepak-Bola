@@ -199,7 +199,9 @@
         font-size: 1rem;
         transition: all 0.3s ease;
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-        width: 100%;
+        width: auto !important;
+        min-width: 200px !important;
+        max-width: 300px !important;
     }
     
     .stButton > button:hover {
@@ -436,6 +438,7 @@
             padding: 1rem;
         }
     }
+
 
 
 
