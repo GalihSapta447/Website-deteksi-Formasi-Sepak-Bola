@@ -308,11 +308,11 @@ elif page_key == "detect":
         with col2:
             st.image(img, caption="Gambar yang Diunggah", use_container_width=True)
 
-        col1, col2, col3 = st.columns([1, 2, 1])
-        with col2:
-            if st.button("🔎 Deteksi Formasi", key="predict_btn"):
-                with st.spinner("Sedang mengdeteksi gambar..."):
-                    prediction, confidence = predict_formation(img)
+        st.markdown("</div>", unsafe_allow_html=True)
+
+        if st.button("🔎 Deteksi Formasi", key="predict_btn"):
+            with st.spinner("Sedang mengdeteksi gambar..."):
+                prediction, confidence = predict_formation(img)
                     
                 st.markdown(f"""
                 <div class="result-card fade-in">
@@ -510,6 +510,7 @@ elif page_key == "history":
             <p style="color: #666;">Lakukan deteksi formasi terlebih dahulu untuk melihat riwayat</p>
         </div>
         """, unsafe_allow_html=True)
+
 
 
 
