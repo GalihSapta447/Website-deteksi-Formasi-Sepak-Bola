@@ -1,3 +1,4 @@
+
 import streamlit as st
 import os
 import numpy as np
@@ -313,7 +314,7 @@ elif page_key == "detect":
         if st.button("🔎 Deteksi Formasi", key="predict_btn"):
             with st.spinner("Sedang mengdeteksi gambar..."):
                 prediction, confidence = predict_formation(img)
-                    
+        
                 st.markdown(f"""
                 <div class="result-card fade-in">
                     <h2 style="margin-bottom: 1rem;">🎯 Hasil Deteksi</h2>
@@ -510,20 +511,3 @@ elif page_key == "history":
             <p style="color: #666;">Lakukan deteksi formasi terlebih dahulu untuk melihat riwayat</p>
         </div>
         """, unsafe_allow_html=True)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
